@@ -1,4 +1,6 @@
-Livre-Coder-efficacement
-========================
+# Coder efficacement
+## Bonnes pratiques et erreurs à éviter (en C++)
 
-Codes sources du livre Coder efficacement
+Ce dépôt contient les codes sources de l'étude de cas du livre [Coder efficacement](http://d-booker.jo.my/coder-efficacement) écrit par Philippe Dunski, qui paraîtra en février 2014 aux [éditions D-BookeR] (http://www.d-booker.fr).
+
+![Couverture du livre](coder_cpp-book.jpg)
