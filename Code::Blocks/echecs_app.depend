@@ -1,0 +1,163 @@
+# depslib dependency file v1.0
+1390089303 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/main.cpp
+	<iostream>
+	<Game.h>
+	<ConsoleOutput.h>
+	<ConcreteInput.h>
+
+1390118953 /home/philippe/Documents/development/repositories/Echecs_coder/include/Game.h
+	<Player.h>
+	<NonCopyable.h>
+	<OutputSystem.h>
+	<ChessBoard.h>
+	<list>
+	<memory>
+	<utility>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/Player.h
+	<Colors.h>
+	<InputSystem.h>
+	<cassert>
+	<memory>
+
+1390121445 /home/philippe/Documents/development/repositories/Echecs_coder/include/Colors.h
+
+1390308432 /home/philippe/Documents/development/repositories/Echecs_coder/include/InputSystem.h
+	<NonCopyable.h>
+	<Colors.h>
+	<Move.h>
+
+1390121369 /home/philippe/Documents/development/repositories/Echecs_coder/include/NonCopyable.h
+
+1390365316 /home/philippe/Documents/development/repositories/Echecs_coder/include/Move.h
+	<cassert>
+	<cstddef>
+
+1390243348 /home/philippe/Documents/development/repositories/Echecs_coder/include/OutputSystem.h
+	<NonCopyable.h>
+	<Colors.h>
+
+1390365316 /home/philippe/Documents/development/repositories/Echecs_coder/include/ChessBoard.h
+	<NonCopyable.h>
+	<Colors.h>
+	<memory>
+	<vector>
+
+1390369533 /home/philippe/Documents/development/repositories/Echecs_coder/include/ConsoleOutput.h
+	<PieceVisitor.h>
+	<OutputSystem.h>
+	<Colors.h>
+	<ConsoleTag.h>
+	<iostream>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/PieceVisitor.h
+	<Piece.h>
+	<PieceTags.h>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/Piece.h
+	<NonCopyable.h>
+	<Colors.h>
+	<Coordinate.h>
+
+1390121510 /home/philippe/Documents/development/repositories/Echecs_coder/include/Coordinate.h
+	<cstddef>
+
+1390121720 /home/philippe/Documents/development/repositories/Echecs_coder/include/PieceTags.h
+
+1390061863 /home/philippe/Documents/development/repositories/Echecs_coder/include/ConsoleTag.h
+
+1390061863 /home/philippe/Documents/development/repositories/Echecs_coder/include/ConcreteInput.h
+	<CommandSender.h>
+	<UserInput.h>
+	<Colors.h>
+	<Move.h>
+	<memory>
+	<vector>
+
+1390309407 /home/philippe/Documents/development/repositories/Echecs_coder/include/CommandSender.h
+	<NonCopyable.h>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/UserInput.h
+	<InputSystem.h>
+
+1390089303 source:/home/philippe/Documents/development/repositories/Echecs_coder/app/main.cpp
+	<iostream>
+	<Game.h>
+	<ConsoleOutput.h>
+	<ConcreteInput.h>
+
+1390118953 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Game.h
+	<Player.h>
+	<NonCopyable.h>
+	<OutputSystem.h>
+	<ChessBoard.h>
+	<list>
+	<memory>
+	<utility>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Player.h
+	<Colors.h>
+	<InputSystem.h>
+	<cassert>
+	<memory>
+
+1390121445 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Colors.h
+
+1390308432 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/InputSystem.h
+	<NonCopyable.h>
+	<Colors.h>
+	<Move.h>
+
+1390121369 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/NonCopyable.h
+
+1390365316 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Move.h
+	<cassert>
+	<cstddef>
+
+1390243348 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/OutputSystem.h
+	<NonCopyable.h>
+	<Colors.h>
+
+1390365316 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ChessBoard.h
+	<NonCopyable.h>
+	<Colors.h>
+	<memory>
+	<vector>
+
+1390369533 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ConsoleOutput.h
+	<PieceVisitor.h>
+	<OutputSystem.h>
+	<Colors.h>
+	<ConsoleTag.h>
+	<iostream>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/PieceVisitor.h
+	<Piece.h>
+	<PieceTags.h>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Piece.h
+	<NonCopyable.h>
+	<Colors.h>
+	<Coordinate.h>
+
+1390121510 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Coordinate.h
+	<cstddef>
+
+1390121720 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/PieceTags.h
+
+1390061863 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ConsoleTag.h
+
+1390061863 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ConcreteInput.h
+	<CommandSender.h>
+	<UserInput.h>
+	<Colors.h>
+	<Move.h>
+	<memory>
+	<vector>
+
+1390309407 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/CommandSender.h
+	<NonCopyable.h>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/UserInput.h
+	<InputSystem.h>
+

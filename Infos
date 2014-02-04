@@ -1,0 +1,89 @@
+Organisation des dossiers
+=========================
+Ce projet est essentiellement composé de deux dossiers principaux : le dossier lib
+et le dossier app.
+
+Vous trouverez également un dossier Code::Blocks reprenant l'ensemble des fichiers
+utilisés par l'EDI Code::Blocks (http://codeblocks.org) pour la gestion de ses 
+projets.
+   
+    Le dossier lib
+    ==============
+    Ce dossier contient l'ensemble des fichiers nécessaire à la compilation de
+    la bibliothèque, qui peut être utilisée comme base dans des projets connexes, 
+    sous réserve de respecter les termes de la licences GNU LGPL V3 ou ultérieure.
+
+    Ce dossier contient deux autres dossiers : le dossier include qui contient 
+    l'ensemble des fichiers d'en-tête et le dossier src qui contient l'ensemble des 
+    fichiers d'implémentation.
+
+    Le dossier app
+    ==============
+    Ce dossier contient le seul fichier nécessaire à la génération d'une application
+    de démonstration en mode console: le fichier main.cpp.  Ce fichier a été 
+    délibérément placé dans un dossier à part afin de permettre la prise en charge
+    ultérieures d'autres EDI et d'autres systèmes d'automatisation de la compilation
+    tels que cmake ou les autotools sous linux.
+    
+    Le dossier Code::Blocks
+    =======================
+    Ce dossier contient essentiellement trois fichiers principaux :
+    - Le fichier echecLib.cbp qui correspond au projet permettant la compilation
+      de la biblitohèque en elle-même ;
+    - le fichier echec_app.cbp qui correspond au projet permettant la compilation
+      de l'application (en mode console) de démonstration ;
+    - le fichier libAndApp.workspace qui correspond à un espace de travail dans
+      lequel la dépendance de l'application de démonstration envers la bibliothèque 
+      a été définie.  Il permet de s'assurer que la bibliothèque a été compilée
+      lorsqu'on souhaite compiler l'appllication de démonstration.
+      
+Prerequis pour la compilation
+=============================
+Le seul prérequis pour la compilation de ce projet est de disposer d'un compilateur
+supportant la norme C++11. Les fonctionnalités indispensables issues de cette norme
+sont :
+ - Le support des fonctions marquées delete ;
+ - le support du static_assert ;
+ - le support des nouveaux type_traits, à savoir :
+     - std::is_same ;
+     - std::is_base_of ;
+     - std::enable_if ;
+ - Le support des valeurs par défaut pour les paramètres template de fonction.
+ 
+    compilateurs connus pour leur support de la norme
+    =================================================
+    A l'heure actuelle, ce projet a été compilé avec succès avec les compilateurs
+    suivants :
+    - Gcc-4.8.1 ;
+    - clang-3.4.
+    Il n'est pas exclu que d'autres compilateurs fournissent le support adéquat
+    de la norme.  N'hésitez pas à me le faire savoir.
+    
+Comment compiler les projets?
+=============================
+A l'heure actuelle, le seul moyen de compiler ces projets passe par l'utilisation
+de Code::Blocks.
+
+Si l'association des fichiers *.cbp et *.workspace a été définie pour lancer 
+Code::blocks, vous pouvez, selon vos besoin, vous contenter de double cliquer
+sur le fichier echecLib.cbp, sur le fichier echec_app.cbp ou sur le fichier 
+libAndApp.workspace. 
+
+Cela aura pour résultat le lancement de Code::blocks et l'ouverture du projet ou 
+de l'espace de travail.
+
+Vous pouvez également lancer Code::Blocks de manière classique et ouvrir ces 
+fichiers en passant par le menu Files->Open.
+
+A venir.
+========
+Dans un futur proche, il sera également possible d'utiliser les autotools et cmake
+pour générer les Makefile nécessaires à la compilation de la bibliothèque et de
+l'application.
+
+Des tests unitaires, basés sur boost::test seront également fournis.
+
+Contacter l'auteur
+==================
+N'hésitez pas à me contacter sur mon blog (http://philippe-dunski.blog4ever.com/)
+pour toute question relative au livre ou au code présenté par ce projet.

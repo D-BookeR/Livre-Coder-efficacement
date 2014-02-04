@@ -1,0 +1,88 @@
+Ce dossier contient trois fichiers essentiels à l'utilisation de l'EDI 
+code::blocks pour la compilation du projet de l'étude de cas:
+
+- le fichier echecLib.cbp qui est le projet "stand alone" de la bibliothèque
+  statique qu'il est possible de compiler.
+
+- le fichier echec_app.cbp qui permet de compiler l'application de démonstration
+
+- le fichier libAndApp.workspace qui fournit un espace de travail mettant les
+  deux projets sus-cités en relation car le projet echec_app est dépendant de la 
+  bibliothèque statique.
+  
+Comment utiliser echecLib.cbp ?
+===============================
+Il vous est possible de ne compiler que la biblitohèque en ouvrant le fichier
+echecLib.cbp avec Code::blocks.  Si l'association des extensions *.cbp  a été
+définie au profit de Code::blocks, vous pouvez vous contenter de double cliquer
+sur le fichier en question
+
+Il s'agit d'un projet de type "bibliothèque statique" (static library), ce qui
+implique qu'une application qui l'utilise sera nécessaire une fois la compilation
+effectuée.
+
+Vous pouvez lancer la compilation de ce projet soit en passant par le menu "build"
+dans lequel vous choisirez de préférences les options "build" ou "rebuild".
+
+Vous pouvez obtenir un résultat identique en utilisant les raccourcis 
+<ctrl>+<F9> pour l'option build et <ctrl>+<F11> pour l'option "rebuild".
+
+La différence entr ces deux options tient dans le fait que rebuild supprime 
+l'ensemble des fichiers objets afin de forcer la compilation de l'ensemble du
+projet, alors que l'option "build" ne fait que compiler les fichiers qui ont été
+modifiés depuis la dernière compilation.
+
+Comment utiliser echec_app.cbp ?
+================================
+Il vous est possible de ne compiler que la biblitohèque en ouvrant le fichier
+echecLib.cbp avec Code::blocks.  Si l'association des extensions *.cbp  a été
+définie au profit de Code::blocks, vous pouvez vous contenter de double cliquer
+sur le fichier en question
+
+Il s'agit du projet capable de fournir l'application de démonstration que vous
+pourrez utiliser à votre aise, dans les limites des spécifications de l'étude
+de cas.
+
+Ce projet nécessite que la bibliothèque statique ait été compilée pour la 
+"saveur" dans laquelle vous souhaitez compiler l'application (Debug ou Release)
+et qu'elle soit disponible dans le dossier lib/<saveur> correspondant.
+
+Vous pouvez lancer la compilation de ce projet soit en passant par le menu "build"
+dans lequel vous choisirez de préférences les options "build" ou "rebuild".
+
+Vous pouvez obtenir un résultat identique en utilisant les raccourcis 
+<ctrl>+<F9> pour l'option build et <ctrl>+<F11> pour l'option "rebuild".
+
+Vous pouvez également utiliser l'option "run" ( <ctrl>+<F10> ) pour lancer 
+l'exécution sans passer par la compilation ainsi que l'option "build and run"
+(<F9>) pour compiler l'application au besoin avant de l'exécuter.  Ces deux 
+options se trouvent également dans le menu "build".
+
+En mode "Debug", vous disposez en outre de la possibilité d'attacher le débuggeur
+à l'application.  Vous pouvez lancer une session de débuggage au travers du 
+menu "Debug" ou en utilisant le raccourci <F8>.
+
+Comment utiliser le fichier libAndApp.workspace?
+================================================
+Il vous est possible de ne compiler que la biblitohèque en ouvrant le fichier
+echecLib.cbp avec Code::blocks.  Si l'association des extensions *.workspace  a
+été définie au profit de Code::blocks, vous pouvez vous contenter de double cliquer
+sur le fichier en question.
+
+Ce fichier définit explicitement la dépendance entre l'application la bibliothèque
+echecLib.cbp) et l'application (echec_app.cbp) et permet, lorsque l'on souhaite
+compiler l'application, de s'assurer que la bibliothèque soit correctement 
+compilée en cas de besoin.
+
+Lorsque le projet echecLib est activé dans cet espace de travail, seule la
+bibiliothèque est compilée.  Lorsque le projet echec_app est activé, la 
+bibiliothèque est compilée au besoin et l'application est compilée.
+
+Vous pouvez également utiliser l'option "run" ( <ctrl>+<F10> ) pour lancer 
+l'exécution sans passer par la compilation ainsi que l'option "build and run"
+(<F9>) pour compiler l'application au besoin avant de l'exécuter.  Ces deux 
+options se trouvent également dans le menu "build".
+
+En mode "Debug", vous disposez en outre de la possibilité d'attacher le débuggeur
+à l'application.  Vous pouvez lancer une session de débuggage au travers du 
+menu "Debug" ou en utilisant le raccourci <F8>.

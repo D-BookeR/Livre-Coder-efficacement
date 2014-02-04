@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="echecLib.cbp" />
+		<Project filename="echecs_app.cbp">
+			<Depends filename="echecLib.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

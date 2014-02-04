@@ -1,0 +1,677 @@
+# depslib dependency file v1.0
+1390073207 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/ChessBoard.cpp
+	<ChessBoard.h>
+	<PieceFactory.h>
+	<Piece.h>
+	<Move.h>
+
+1390365316 /home/philippe/Documents/development/repositories/Echecs_coder/include/ChessBoard.h
+	<NonCopyable.h>
+	<Colors.h>
+	<memory>
+	<vector>
+
+1390121369 /home/philippe/Documents/development/repositories/Echecs_coder/include/NonCopyable.h
+
+1390121445 /home/philippe/Documents/development/repositories/Echecs_coder/include/Colors.h
+
+1390361147 /home/philippe/Documents/development/repositories/Echecs_coder/include/PieceFactory.h
+	<PieceTags.h>
+	<Colors.h>
+	<cstddef>
+
+1390121720 /home/philippe/Documents/development/repositories/Echecs_coder/include/PieceTags.h
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/Piece.h
+	<NonCopyable.h>
+	<Colors.h>
+	<Coordinate.h>
+
+1390121510 /home/philippe/Documents/development/repositories/Echecs_coder/include/Coordinate.h
+	<cstddef>
+
+1390365316 /home/philippe/Documents/development/repositories/Echecs_coder/include/Move.h
+	<cassert>
+	<cstddef>
+
+1390085116 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/Command.cpp
+	<Command.h>
+
+1390118953 /home/philippe/Documents/development/repositories/Echecs_coder/include/Command.h
+	<NonCopyable.h>
+
+1390085249 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/CommandSender.cpp
+	<CommandSender.h>
+
+1390309407 /home/philippe/Documents/development/repositories/Echecs_coder/include/CommandSender.h
+	<NonCopyable.h>
+
+1390369486 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/ConsoleExplicit.cpp
+	<ConsoleOutput.h>
+	<ChessBoard.h>
+	<toConcreteOutput.h>
+	<UnexpectedCommand.h>
+	<HelpCommand.h>
+	<TeamListCommand.h>
+	<AllPieceListCommand.h>
+	<ExitCommand.h>
+	<SurrenderCommand.h>
+	<NewGameCommand.h>
+	<NeedInitCommand.h>
+	<MoveCommand.h>
+	<CastlingCommand.h>
+	<GrandCastlingCommand.h>
+	<toUpperFunction.h>
+	<iomanip>
+	<vector>
+	<tuple>
+	<string>
+	<cassert>
+	<limits>
+
+1390369533 /home/philippe/Documents/development/repositories/Echecs_coder/include/ConsoleOutput.h
+	<PieceVisitor.h>
+	<OutputSystem.h>
+	<Colors.h>
+	<ConsoleTag.h>
+	<iostream>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/PieceVisitor.h
+	<Piece.h>
+	<PieceTags.h>
+
+1390243348 /home/philippe/Documents/development/repositories/Echecs_coder/include/OutputSystem.h
+	<NonCopyable.h>
+	<Colors.h>
+
+1390061863 /home/philippe/Documents/development/repositories/Echecs_coder/include/ConsoleTag.h
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/include/toConcreteOutput.h
+	<Game.h>
+
+1390118953 /home/philippe/Documents/development/repositories/Echecs_coder/include/Game.h
+	<Player.h>
+	<NonCopyable.h>
+	<OutputSystem.h>
+	<ChessBoard.h>
+	<list>
+	<memory>
+	<utility>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/Player.h
+	<Colors.h>
+	<InputSystem.h>
+	<cassert>
+	<memory>
+
+1390308432 /home/philippe/Documents/development/repositories/Echecs_coder/include/InputSystem.h
+	<NonCopyable.h>
+	<Colors.h>
+	<Move.h>
+
+1390119997 /home/philippe/Documents/development/repositories/Echecs_coder/include/UnexpectedCommand.h
+	<Command.h>
+	<CommandTraits.h>
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/include/CommandTraits.h
+
+1390119923 /home/philippe/Documents/development/repositories/Echecs_coder/include/HelpCommand.h
+	<Command.h>
+	<CommandTraits.h>
+
+1390120347 /home/philippe/Documents/development/repositories/Echecs_coder/include/TeamListCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/AllPieceListCommand.h
+	<Command.h>
+	<CommandTraits.h>
+
+1390120816 /home/philippe/Documents/development/repositories/Echecs_coder/include/ExitCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+	<Game.h>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/SurrenderCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+	<Game.h>
+
+1390120816 /home/philippe/Documents/development/repositories/Echecs_coder/include/NewGameCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+	<Game.h>
+
+1390119997 /home/philippe/Documents/development/repositories/Echecs_coder/include/NeedInitCommand.h
+	<Command.h>
+	<CommandTraits.h>
+	<Game.h>
+
+1390120587 /home/philippe/Documents/development/repositories/Echecs_coder/include/MoveCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+	<Move.h>
+	<PiecePathChecker.h>
+	<KingInCheckFunctions.h>
+	<iostream>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/PiecePathChecker.h
+	<PieceVisitor.h>
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/include/KingInCheckFunctions.h
+	<Colors.h>
+
+1390120816 /home/philippe/Documents/development/repositories/Echecs_coder/include/CastlingCommand.h
+
+1390120816 /home/philippe/Documents/development/repositories/Echecs_coder/include/GrandCastlingCommand.h
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/include/toUpperFunction.h
+	<string>
+
+1390349387 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/ConsoleInput.cpp
+	<ConcreteInput.h>
+	<ConsoleOutput.h>
+	<ChessBoard.h>
+	<toConcreteOutput.h>
+	<UnexpectedCommand.h>
+	<HelpCommand.h>
+	<TeamListCommand.h>
+	<AllPieceListCommand.h>
+	<ExitCommand.h>
+	<SurrenderCommand.h>
+	<NewGameCommand.h>
+	<MoveCommand.h>
+	<CastlingCommand.h>
+	<GrandCastlingCommand.h>
+	<ConcreteCommandSender.h>
+	<NeedInitCommand.h>
+	<toUpperFunction.h>
+
+1390061863 /home/philippe/Documents/development/repositories/Echecs_coder/include/ConcreteInput.h
+	<CommandSender.h>
+	<UserInput.h>
+	<Colors.h>
+	<Move.h>
+	<memory>
+	<vector>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/include/UserInput.h
+	<InputSystem.h>
+
+1390118953 /home/philippe/Documents/development/repositories/Echecs_coder/include/ConcreteCommandSender.h
+	<CommandSender.h>
+	<CommandTraits.h>
+	<type_traits>
+
+1390073543 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/Coordinate.cpp
+	<Coordinate.h>
+
+1390073768 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/Directions.cpp
+	<Directions.h>
+	<Coordinate.h>
+	<Move.h>
+	<cstdlib>
+	<cassert>
+
+1390121610 /home/philippe/Documents/development/repositories/Echecs_coder/include/Directions.h
+
+1390089317 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/Game.cpp
+	<Game.h>
+	<cassert>
+	<PieceFactory.h>
+	<Command.h>
+	<Piece.h>
+	<KingInCheckFunctions.h>
+	<PlayerAllowedMoves.h>
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/include/PlayerAllowedMoves.h
+	<Colors.h>
+	<Move.h>
+	<list>
+
+1390085383 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/InputSystem.cpp
+	<InputSystem.h>
+	<Game.h>
+
+1390073600 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/KingIdentifier.cpp
+	<KingIdentifier.h>
+	<ConcretePiece.h>
+	<ChessBoard.h>
+	<cassert>
+
+1390119323 /home/philippe/Documents/development/repositories/Echecs_coder/include/KingIdentifier.h
+	<PieceVisitor.h>
+
+1390171273 /home/philippe/Documents/development/repositories/Echecs_coder/include/ConcretePiece.h
+	<PieceTags.h>
+	<Piece.h>
+	<type_traits>
+	<cassert>
+
+1390084601 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/KingInCheckFunctions.cpp
+	<KingInCheckFunctions.h>
+	<KingIdentifier.h>
+	<Move.h>
+	<PiecePathChecker.h>
+	<ChessBoard.h>
+	<SimulationFunctions.h>
+	<SimulatedPiecePathChecker.h>
+	<cassert>
+
+1390172196 /home/philippe/Documents/development/repositories/Echecs_coder/include/SimulationFunctions.h
+
+1390172195 /home/philippe/Documents/development/repositories/Echecs_coder/include/SimulatedPiecePathChecker.h
+	<PieceVisitor.h>
+	<Move.h>
+
+1390085016 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/OutputSystem.cpp
+	<OutputSystem.h>
+
+1390074823 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/PermissiveRuleChecker.cpp
+	<PermissiveRuleChecker.h>
+	<Move.h>
+	<Directions.h>
+	<ConcretePiece.h>
+	<cstdlib>
+	<cassert>
+
+1390168298 /home/philippe/Documents/development/repositories/Echecs_coder/include/PermissiveRuleChecker.h
+	<PieceVisitor.h>
+
+1390172194 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/Piece.cpp
+	<Piece.h>
+	<cassert>
+
+1390122646 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/PieceFactory.cpp
+	<PieceFactory.h>
+	<PieceVisitor.h>
+	<ConcretePiece.h>
+
+1390076422 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/PiecePathChecker.cpp
+	<PiecePathChecker.h>
+	<ConcretePiece.h>
+	<Move.h>
+	<ChessBoard.h>
+	<Directions.h>
+	<PermissiveRuleChecker.h>
+
+1390075005 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/PieceVisitor.cpp
+	<PieceVisitor.h>
+	<ConcretePiece.h>
+
+1390084776 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/PlayerAllowedMoves.cpp
+	<PlayerAllowedMoves.h>
+	<ChessBoard.h>
+	<PiecePathChecker.h>
+	<KingInCheckFunctions.h>
+	<cassert>
+
+1390084291 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/SimulatedPermissiveRuleChecker.cpp
+	<SimulatedPermissiveRuleChecker.h>
+	<ConcretePiece.h>
+	<SimulationFunctions.h>
+	<Directions.h>
+	<cstdlib>
+
+1390168685 /home/philippe/Documents/development/repositories/Echecs_coder/include/SimulatedPermissiveRuleChecker.h
+	<PieceVisitor.h>
+	<Move.h>
+
+1390084491 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/SimulatedPiecePathChecker.cpp
+	<SimulatedPiecePathChecker.h>
+	<SimulatedPermissiveRuleChecker.h>
+	<SimulationFunctions.h>
+	<Directions.h>
+	<ChessBoard.h>
+	<ConcretePiece.h>
+
+1390073949 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/toUpperFunction.cpp
+	<toUpperFunction.h>
+
+1390085383 source:/home/philippe/Documents/development/repositories/Echecs_coder/src/UserInput.cpp
+	<UserInput.h>
+	<CommandSender.h>
+
+1390073207 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/ChessBoard.cpp
+	<ChessBoard.h>
+	<PieceFactory.h>
+	<Piece.h>
+	<Move.h>
+
+1390365316 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ChessBoard.h
+	<NonCopyable.h>
+	<Colors.h>
+	<memory>
+	<vector>
+
+1390121369 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/NonCopyable.h
+
+1390121445 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Colors.h
+
+1390361147 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/PieceFactory.h
+	<PieceTags.h>
+	<Colors.h>
+	<cstddef>
+
+1390121720 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/PieceTags.h
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Piece.h
+	<NonCopyable.h>
+	<Colors.h>
+	<Coordinate.h>
+
+1390121510 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Coordinate.h
+	<cstddef>
+
+1390365316 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Move.h
+	<cassert>
+	<cstddef>
+
+1390085116 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/Command.cpp
+	<Command.h>
+
+1390118953 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Command.h
+	<NonCopyable.h>
+
+1390085249 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/CommandSender.cpp
+	<CommandSender.h>
+
+1390309407 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/CommandSender.h
+	<NonCopyable.h>
+
+1390369486 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/ConsoleExplicit.cpp
+	<ConsoleOutput.h>
+	<ChessBoard.h>
+	<toConcreteOutput.h>
+	<UnexpectedCommand.h>
+	<HelpCommand.h>
+	<TeamListCommand.h>
+	<AllPieceListCommand.h>
+	<ExitCommand.h>
+	<SurrenderCommand.h>
+	<NewGameCommand.h>
+	<NeedInitCommand.h>
+	<MoveCommand.h>
+	<CastlingCommand.h>
+	<GrandCastlingCommand.h>
+	<toUpperFunction.h>
+	<iomanip>
+	<vector>
+	<tuple>
+	<string>
+	<cassert>
+	<limits>
+
+1390369533 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ConsoleOutput.h
+	<PieceVisitor.h>
+	<OutputSystem.h>
+	<Colors.h>
+	<ConsoleTag.h>
+	<iostream>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/PieceVisitor.h
+	<Piece.h>
+	<PieceTags.h>
+
+1390243348 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/OutputSystem.h
+	<NonCopyable.h>
+	<Colors.h>
+
+1390061863 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ConsoleTag.h
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/toConcreteOutput.h
+	<Game.h>
+
+1390118953 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Game.h
+	<Player.h>
+	<NonCopyable.h>
+	<OutputSystem.h>
+	<ChessBoard.h>
+	<list>
+	<memory>
+	<utility>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Player.h
+	<Colors.h>
+	<InputSystem.h>
+	<cassert>
+	<memory>
+
+1390308432 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/InputSystem.h
+	<NonCopyable.h>
+	<Colors.h>
+	<Move.h>
+
+1390119997 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/UnexpectedCommand.h
+	<Command.h>
+	<CommandTraits.h>
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/CommandTraits.h
+
+1390119923 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/HelpCommand.h
+	<Command.h>
+	<CommandTraits.h>
+
+1390120347 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/TeamListCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/AllPieceListCommand.h
+	<Command.h>
+	<CommandTraits.h>
+
+1390120816 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ExitCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+	<Game.h>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/SurrenderCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+	<Game.h>
+
+1390120816 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/NewGameCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+	<Game.h>
+
+1390119997 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/NeedInitCommand.h
+	<Command.h>
+	<CommandTraits.h>
+	<Game.h>
+
+1390120587 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/MoveCommand.h
+	<Colors.h>
+	<Command.h>
+	<CommandTraits.h>
+	<Move.h>
+	<PiecePathChecker.h>
+	<KingInCheckFunctions.h>
+	<iostream>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/PiecePathChecker.h
+	<PieceVisitor.h>
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/KingInCheckFunctions.h
+	<Colors.h>
+
+1390120816 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/CastlingCommand.h
+
+1390120816 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/GrandCastlingCommand.h
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/toUpperFunction.h
+	<string>
+
+1390349387 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/ConsoleInput.cpp
+	<ConcreteInput.h>
+	<ConsoleOutput.h>
+	<ChessBoard.h>
+	<toConcreteOutput.h>
+	<UnexpectedCommand.h>
+	<HelpCommand.h>
+	<TeamListCommand.h>
+	<AllPieceListCommand.h>
+	<ExitCommand.h>
+	<SurrenderCommand.h>
+	<NewGameCommand.h>
+	<MoveCommand.h>
+	<CastlingCommand.h>
+	<GrandCastlingCommand.h>
+	<ConcreteCommandSender.h>
+	<NeedInitCommand.h>
+	<toUpperFunction.h>
+
+1390061863 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ConcreteInput.h
+	<CommandSender.h>
+	<UserInput.h>
+	<Colors.h>
+	<Move.h>
+	<memory>
+	<vector>
+
+1390349387 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/UserInput.h
+	<InputSystem.h>
+
+1390118953 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ConcreteCommandSender.h
+	<CommandSender.h>
+	<CommandTraits.h>
+	<type_traits>
+
+1390073543 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/Coordinate.cpp
+	<Coordinate.h>
+
+1390073768 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/Directions.cpp
+	<Directions.h>
+	<Coordinate.h>
+	<Move.h>
+	<cstdlib>
+	<cassert>
+
+1390121610 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/Directions.h
+
+1390089317 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/Game.cpp
+	<Game.h>
+	<cassert>
+	<PieceFactory.h>
+	<Command.h>
+	<Piece.h>
+	<KingInCheckFunctions.h>
+	<PlayerAllowedMoves.h>
+
+1390118612 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/PlayerAllowedMoves.h
+	<Colors.h>
+	<Move.h>
+	<list>
+
+1390085383 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/InputSystem.cpp
+	<InputSystem.h>
+	<Game.h>
+
+1390073600 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/KingIdentifier.cpp
+	<KingIdentifier.h>
+	<ConcretePiece.h>
+	<ChessBoard.h>
+	<cassert>
+
+1390119323 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/KingIdentifier.h
+	<PieceVisitor.h>
+
+1390171273 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/ConcretePiece.h
+	<PieceTags.h>
+	<Piece.h>
+	<type_traits>
+	<cassert>
+
+1390084601 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/KingInCheckFunctions.cpp
+	<KingInCheckFunctions.h>
+	<KingIdentifier.h>
+	<Move.h>
+	<PiecePathChecker.h>
+	<ChessBoard.h>
+	<SimulationFunctions.h>
+	<SimulatedPiecePathChecker.h>
+	<cassert>
+
+1390172196 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/SimulationFunctions.h
+
+1390172195 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/SimulatedPiecePathChecker.h
+	<PieceVisitor.h>
+	<Move.h>
+
+1390085016 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/OutputSystem.cpp
+	<OutputSystem.h>
+
+1390074823 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/PermissiveRuleChecker.cpp
+	<PermissiveRuleChecker.h>
+	<Move.h>
+	<Directions.h>
+	<ConcretePiece.h>
+	<cstdlib>
+	<cassert>
+
+1390168298 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/PermissiveRuleChecker.h
+	<PieceVisitor.h>
+
+1390172194 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/Piece.cpp
+	<Piece.h>
+	<cassert>
+
+1390122646 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/PieceFactory.cpp
+	<PieceFactory.h>
+	<PieceVisitor.h>
+	<ConcretePiece.h>
+
+1390076422 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/PiecePathChecker.cpp
+	<PiecePathChecker.h>
+	<ConcretePiece.h>
+	<Move.h>
+	<ChessBoard.h>
+	<Directions.h>
+	<PermissiveRuleChecker.h>
+
+1390075005 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/PieceVisitor.cpp
+	<PieceVisitor.h>
+	<ConcretePiece.h>
+
+1390084776 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/PlayerAllowedMoves.cpp
+	<PlayerAllowedMoves.h>
+	<ChessBoard.h>
+	<PiecePathChecker.h>
+	<KingInCheckFunctions.h>
+	<cassert>
+
+1390084291 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/SimulatedPermissiveRuleChecker.cpp
+	<SimulatedPermissiveRuleChecker.h>
+	<ConcretePiece.h>
+	<SimulationFunctions.h>
+	<Directions.h>
+	<cstdlib>
+
+1390168685 /home/philippe/Documents/development/repositories/Echecs_coder/lib/include/SimulatedPermissiveRuleChecker.h
+	<PieceVisitor.h>
+	<Move.h>
+
+1390084491 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/SimulatedPiecePathChecker.cpp
+	<SimulatedPiecePathChecker.h>
+	<SimulatedPermissiveRuleChecker.h>
+	<SimulationFunctions.h>
+	<Directions.h>
+	<ChessBoard.h>
+	<ConcretePiece.h>
+
+1390073949 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/toUpperFunction.cpp
+	<toUpperFunction.h>
+
+1390085383 source:/home/philippe/Documents/development/repositories/Echecs_coder/lib/src/UserInput.cpp
+	<UserInput.h>
+	<CommandSender.h>
+
