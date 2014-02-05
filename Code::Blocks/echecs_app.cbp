@@ -40,9 +40,9 @@
 			<Add option="-Wextra" />
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="../include" />
+			<Add directory="../lib/include" />
 		</Compiler>
-		<Unit filename="../src/main.cpp" />
+		<Unit filename="../app/main.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />
