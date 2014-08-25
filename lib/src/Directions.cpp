@@ -13,9 +13,9 @@ Directions findDirection(Move const & move){
         return back;
     else if( diffx == 0 && diffy > 0 )
         return front;
-    else if( diffx < 0 && diffx == 0 )
+    else if( diffx < 0 && diffy == 0 )
         return left;
-    else if ( diffx > 0 && diffx == 0 )
+    else if ( diffx > 0 && diffy == 0 )
         return right;
     else if( diffx < 0 && abs(diffx) == diffy )
         return frontLeft;
