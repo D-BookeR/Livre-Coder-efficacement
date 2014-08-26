@@ -5,7 +5,8 @@ et le dossier app.
 
 Vous trouverez également un dossier Code::Blocks reprenant l'ensemble des fichiers
 utilisés par l'EDI Code::Blocks (http://codeblocks.org) pour la gestion de ses 
-projets.
+projets ainsi qu'un dossier Makefile, subdivisé en sous dossiers windows et linux contenant les Makefile
+pour les deux systèmes d'exploitations envisagés.
    
     Le dossier lib
     ==============
@@ -61,9 +62,11 @@ sont :
     
 Comment compiler les projets?
 =============================
-A l'heure actuelle, le seul moyen de compiler ces projets passe par l'utilisation
-de Code::Blocks.
+Il existe deux possibilités pour compiler ce projet : en utilisant l'EDI Code::Blocks ou
+en utilisant les Makefiles.
 
+Compiler avec code::blocks
+==========================
 Si l'association des fichiers *.cbp et *.workspace a été définie pour lancer 
 Code::blocks, vous pouvez, selon vos besoin, vous contenter de double cliquer
 sur le fichier echecLib.cbp, sur le fichier echec_app.cbp ou sur le fichier 
@@ -74,14 +77,55 @@ de l'espace de travail.
 
 Vous pouvez également lancer Code::Blocks de manière classique et ouvrir ces 
 fichiers en passant par le menu Files->Open.
+Utiliser les Makefiles sous linux
+=================================
+Ouvrez une console et entrez dans le dossier Makefiles/linux à l'aide de la 
+commande
+cd <chemin vers le dossier racine>/Makefile/linux
 
-A venir.
-========
-Dans un futur proche, il sera également possible d'utiliser les autotools et cmake
-pour générer les Makefile nécessaires à la compilation de la bibliothèque et de
-l'application.
+Selon le compilateur que vous souhaitez utiliser (gcc ou clang) lancez la 
+commande 
+make -f Makefile.gcc 
+ou la commande
+make -f Makefile.clang
+Lorsque la compilation est terminée, une application nommée chessap sera 
+disponible dans le dossier dans lequel vous vous trouvez
+Utiliser le Makefiles sous windows
+==================================
+Ouvrez une invite de commande et entrez dans le dossier Makefile\windows à l'aide
+de la commande
+cd <chemin vers le dossier racine>\Makefiles\linux
 
-Des tests unitaires, basés sur boost::test seront également fournis.
+Au besoin, rajoutez le dossier bin de votre installation de gcc (ou de clang) à
+la variable PATH avec la commande
+
+set PATH=%PATH%;<dossier vers mingw/clang>\bin
+
+Selon le compilateur que vous souhaitez utiliser (gcc ou clang) lancez la 
+commande
+mingw32-make -f Makefile.gcc 
+ou la commande 
+mingw32-make -f Makefile.clang
+Lorsque la compilation est terminée, une application nommée chessap.exe sera 
+disponible dans le dossier dans lequel vous vous trouvez
+NOTA : Il est possible que la première invocation de cette commande échoue avec,
+pour seule indiation un message proche de 
+mingw32-make: Interrupt/Exception caught (code = 0xc0000005, addr 0x00007FFCADA2D23)
+
+Dans ce cas, relancez simplement la commande ci-dessus pour terminer la 
+compilation.
+
+Supprimer les fichiers objet et l'application
+=============================================
+Vous pouvez supprimer les fichiers objets générés lors de la compilation en 
+ajoutant l'option clean à la commande utilisée.
+
+Si vous souhaitez également supprimer l'application en plus des fichiers objets,
+remplacez l'option clean par l'option cleanall.
+
+A venir
+=======
+Des tests unitaires, basés sur boost::test seront prochainement fournis.
 
 Contacter l'auteur
 ==================

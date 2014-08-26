@@ -1,0 +1,36 @@
+SRC_FILES = ../../lib/src/ChessBoard  \
+../../lib/src/Command  \
+../../lib/src/UserInput \
+../../lib/src/CommandSender \
+../../lib/src/ConsoleExplicit \
+../../lib/src/ConsoleInput \
+../../lib/src/Coordinate \
+../../lib/src/Directions \
+../../lib/src/Game \
+../../lib/src/InputSystem \
+../../lib/src/KingIdentifier \
+../../lib/src/KingInCheckFunctions \
+../../lib/src/OutputSystem \
+../../lib/src/PermissiveRuleChecker \
+../../lib/src/Piece \
+../../lib/src/PieceFactory \
+../../lib/src/PiecePathChecker \
+../../lib/src/PieceVisitor \
+../../lib/src/PlayerAllowedMoves \
+../../lib/src/SimulatedPermissiveRuleChecker \
+../../lib/src/SimulatedPiecePathChecker \
+../../lib/src/toUpperFunction
+
+CXXFLAGS = -std=c++11 -I../../lib/include -I. -DDEBUG --all-warnings
+
+chessapp: ../../app/main.cpp $(addsuffix .o,$(SRC_FILES))
+	g++ -o $@ $^ $(CXXFLAGS)
+	
+$(addsuffix .o,$(SRC_FILES)): $(addsuffix  .cpp,$(SRC_FILES))
+
+
+cleanall: clean
+	rm -f chessapp
+
+clean:
+	rm -f Scene.o $(addsuffix .o,$(SRC_FILES))
