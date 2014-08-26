@@ -5,7 +5,7 @@
 #include <memory>
 #include <vector>
 class Piece;
-class Move;
+struct Move;
 /** L'échiquier utilisé en cours de partie.
   *
   * L'échiquier est la partie centrale du jeu d'échecs autour de

@@ -4,7 +4,7 @@
 #include <Colors.h>
 class ChessBoard;
 class Coordinate;
-class Move;
+struct Move;
 class Piece;
 class Game;
 /** Abstraction de base représentant n'importe quel système de
